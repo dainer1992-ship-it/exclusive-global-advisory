@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.DS_Store
+*.tsbuildinfo
+vite.config.js
+vite.config.d.ts
+
+# Local build/source references not needed in the public preview repo.
+CODEX_BRIEF.md
+brand-assets/
+source-material/
