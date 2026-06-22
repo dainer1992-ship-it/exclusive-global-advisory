@@ -45,17 +45,17 @@ export function Services() {
           </div>
         </FadeIn>
 
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-12">
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {services.map((service, index) => {
             const Icon = service.icon;
             const featured = index === 0;
             return (
               <FadeIn key={service.title} trigger="scroll" delay={index * 80}>
                 <article
-                  className={`group flex h-full flex-col rounded-2xl border p-6 transition-all duration-300 ease-out hover:-translate-y-1 ${
+                  className={`group flex h-full min-h-[260px] flex-col rounded-2xl border p-6 transition-all duration-300 ease-out hover:-translate-y-1 sm:p-7 ${
                     featured
-                      ? 'premium-surface border-gold/20 lg:col-span-4'
-                      : 'border-navy/10 bg-white/82 shadow-soft lg:col-span-2'
+                      ? 'premium-surface border-gold/20 md:col-span-2 xl:col-span-1'
+                      : 'border-navy/10 bg-white/82 shadow-soft'
                   }`}
                 >
                   <div
@@ -65,10 +65,10 @@ export function Services() {
                   >
                     <Icon className="h-5 w-5" />
                   </div>
-                  <h3 className={`${featured ? 'text-2xl' : 'text-xl'} mb-3 font-semibold text-navy`}>
+                  <h3 className={`${featured ? 'text-2xl' : 'text-xl'} mb-3 max-w-[12rem] font-semibold leading-tight text-navy`}>
                     {service.title}
                   </h3>
-                  <p className={`${featured ? 'text-base leading-7' : 'text-sm leading-6'} text-muted`}>
+                  <p className={`${featured ? 'text-base leading-7' : 'text-[0.95rem] leading-7'} max-w-[30rem] text-muted`}>
                     {service.description}
                   </p>
                 </article>

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dainer1992-ship-it.github.io/exclusive-global-advisory/sitemap.xml

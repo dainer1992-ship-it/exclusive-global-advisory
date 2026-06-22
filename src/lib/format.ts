@@ -14,6 +14,10 @@ export const socials = {
   youtube: 'https://www.youtube.com/watch?v=QsY8fnvMn6c',
 };
 
+export function assetPath(filename: string) {
+  return filename.replace(/^\/+/, '');
+}
+
 export function formatCurrency(value: number) {
   return new Intl.NumberFormat('en-MY', {
     style: 'currency',

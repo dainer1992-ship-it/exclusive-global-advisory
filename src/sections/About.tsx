@@ -1,6 +1,6 @@
 import { ArrowUpRight } from 'lucide-react';
 import { FadeIn } from '../components/FadeIn';
-import { WHATSAPP_URL } from '../lib/format';
+import { WHATSAPP_URL, assetPath } from '../lib/format';
 
 export function About() {
   return (
@@ -45,7 +45,7 @@ export function About() {
         <FadeIn trigger="scroll" delay={120}>
           <div className="relative rounded-[2rem] border border-navy/10 bg-white/70 p-2 shadow-soft">
             <img
-              src="/advisory-meeting.jpg"
+              src={assetPath('advisory-meeting.jpg')}
               alt="Business financing advisory meeting"
               className="aspect-[4/5] w-full rounded-[1.55rem] object-cover"
             />

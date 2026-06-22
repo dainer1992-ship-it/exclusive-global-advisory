@@ -1,0 +1,695 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exclusive Global Advisory - Monthly SEO and Traffic Plan</title>
+    <style>
+      :root {
+        --navy: #0a2643;
+        --navy-700: #123356;
+        --gold: #d4b86a;
+        --gold-deep: #a87c4f;
+        --cream: #fdf8f0;
+        --ink: #1b2733;
+        --muted: #5b6b7b;
+        --line: #e8dcc8;
+        --success: #16a34a;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        color: var(--ink);
+        background: var(--cream);
+      }
+
+      body {
+        margin: 0;
+        line-height: 1.55;
+      }
+
+      a {
+        color: var(--navy);
+        font-weight: 700;
+        text-decoration-color: rgba(168, 124, 79, 0.45);
+        text-underline-offset: 3px;
+      }
+
+      .page {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 42px 22px 56px;
+      }
+
+      .hero {
+        display: grid;
+        grid-template-columns: 1.15fr 0.85fr;
+        gap: 28px;
+        align-items: stretch;
+        padding: 34px;
+        border: 1px solid rgba(10, 38, 67, 0.12);
+        border-radius: 28px;
+        background:
+          radial-gradient(circle at 82% 12%, rgba(212, 184, 106, 0.3), transparent 28%),
+          linear-gradient(135deg, #fffaf2, #f6ead9 62%, #fdf8f0);
+        box-shadow: 0 26px 80px rgba(10, 38, 67, 0.12);
+      }
+
+      .logo-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 46px;
+      }
+
+      .mark {
+        width: 64px;
+        height: 64px;
+        border-radius: 18px;
+        display: grid;
+        place-items: center;
+        color: var(--navy);
+        background: linear-gradient(135deg, var(--gold-deep), var(--gold));
+        font-weight: 900;
+        letter-spacing: 0.08em;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 0 14px;
+        padding: 7px 12px;
+        border: 1px solid rgba(168, 124, 79, 0.24);
+        border-radius: 999px;
+        color: var(--gold-deep);
+        background: rgba(255, 255, 255, 0.62);
+        font-size: 0.72rem;
+        font-weight: 800;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--gold-deep);
+      }
+
+      h1,
+      h2,
+      h3 {
+        color: var(--navy);
+        line-height: 1.06;
+        margin: 0;
+      }
+
+      h1 {
+        max-width: 12ch;
+        font-size: clamp(2.7rem, 7vw, 5.8rem);
+        letter-spacing: -0.02em;
+      }
+
+      h2 {
+        font-size: clamp(1.9rem, 3vw, 3rem);
+        margin-bottom: 18px;
+      }
+
+      h3 {
+        font-size: 1.15rem;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .lead {
+        margin-top: 22px;
+        max-width: 62ch;
+        color: var(--muted);
+        font-size: 1.08rem;
+      }
+
+      .status-card {
+        align-self: end;
+        padding: 26px;
+        border-radius: 22px;
+        color: white;
+        background: linear-gradient(145deg, var(--navy), var(--navy-700));
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+      }
+
+      .status-card h2 {
+        color: white;
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+      }
+
+      .status-card ul {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .status-card li {
+        display: flex;
+        gap: 10px;
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .status-card li::before {
+        content: "";
+        flex: 0 0 auto;
+        width: 9px;
+        height: 9px;
+        margin-top: 0.48rem;
+        border-radius: 999px;
+        background: var(--gold);
+      }
+
+      .section {
+        padding: 46px 0 0;
+      }
+
+      .grid {
+        display: grid;
+        gap: 18px;
+      }
+
+      .grid-2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .card {
+        min-height: 100%;
+        padding: 24px;
+        border: 1px solid var(--line);
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.72);
+        box-shadow: 0 18px 54px rgba(10, 38, 67, 0.07);
+        break-inside: avoid;
+      }
+
+      .card.gold {
+        background: linear-gradient(135deg, rgba(168, 124, 79, 0.13), rgba(212, 184, 106, 0.1)), white;
+      }
+
+      .metric {
+        display: grid;
+        gap: 5px;
+      }
+
+      .metric strong {
+        color: var(--navy);
+        font-size: 1.85rem;
+        line-height: 1;
+      }
+
+      .metric span,
+      .muted {
+        color: var(--muted);
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+        overflow: hidden;
+        border: 1px solid var(--line);
+        border-radius: 18px;
+        background: white;
+        break-inside: avoid;
+      }
+
+      .table th,
+      .table td {
+        padding: 15px 16px;
+        border-bottom: 1px solid var(--line);
+        text-align: left;
+        vertical-align: top;
+      }
+
+      .table th {
+        color: var(--navy);
+        background: #f4ead9;
+        font-size: 0.78rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+      }
+
+      .table tr:last-child td {
+        border-bottom: 0;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 18px;
+      }
+
+      .pill {
+        padding: 8px 11px;
+        border: 1px solid rgba(10, 38, 67, 0.12);
+        border-radius: 999px;
+        color: var(--navy);
+        background: white;
+        font-size: 0.84rem;
+        font-weight: 750;
+      }
+
+      .callout {
+        padding: 24px;
+        border-radius: 22px;
+        color: white;
+        background: linear-gradient(135deg, var(--navy), #071d34);
+        break-inside: avoid;
+      }
+
+      .callout h2,
+      .callout h3 {
+        color: white;
+      }
+
+      .callout p,
+      .callout li {
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .checklist {
+        display: grid;
+        gap: 11px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .checklist li {
+        position: relative;
+        padding-left: 24px;
+      }
+
+      .checklist li::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0.48rem;
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: var(--gold);
+      }
+
+      .source-list {
+        display: grid;
+        gap: 8px;
+        padding-left: 20px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .footer {
+        margin-top: 42px;
+        padding-top: 18px;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .page-break {
+        break-before: page;
+      }
+
+      @media (max-width: 860px) {
+        .hero,
+        .grid-2,
+        .grid-3 {
+          grid-template-columns: 1fr;
+        }
+
+        .hero {
+          padding: 24px;
+        }
+
+        .logo-row {
+          margin-bottom: 28px;
+        }
+      }
+
+      @media print {
+        body {
+          background: white;
+        }
+
+        .page {
+          max-width: none;
+          padding: 0;
+        }
+
+        .hero,
+        .card,
+        .callout {
+          box-shadow: none;
+        }
+
+        a {
+          color: var(--navy);
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div>
+          <div class="logo-row">
+            <div class="mark">EGA</div>
+            <div>
+              <strong>Exclusive Global Advisory</strong>
+              <p class="muted">Monthly SEO, traffic, and content engine plan</p>
+            </div>
+          </div>
+          <p class="eyebrow">For Dainer and Jay</p>
+          <h1>Turn the new site into enquiries.</h1>
+          <p class="lead">
+            The website is now strong enough to show prospects. The next job is distribution:
+            get found by Malaysian SME owners, make the financing offer clear, and convert warm
+            attention into WhatsApp consultations.
+          </p>
+        </div>
+        <aside class="status-card">
+          <h2>Current status</h2>
+          <ul>
+            <li>Website UI bugs fixed: service-card layout, logo path, and about photo path.</li>
+            <li>SEO basics added: canonical, Open Graph, structured data, robots, and sitemap.</li>
+            <li>Recommended next: connect real domain, Search Console, GA4, and Google Business Profile.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">Site audit</p>
+        <h2>What was checked and fixed</h2>
+        <div class="grid grid-3">
+          <div class="card gold metric">
+            <strong>Pass</strong>
+            <span>Hero video, EGA logo, about photo, nav anchors, WhatsApp/social links, and all 8 sections render locally.</span>
+          </div>
+          <div class="card gold metric">
+            <strong>Pass</strong>
+            <span>Calculators live-update and the verified loan math test suite passes.</span>
+          </div>
+          <div class="card gold metric">
+            <strong>Pass</strong>
+            <span>Responsive audit passes at 375px, 1024px, and 1440px with no horizontal overflow.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">Monthly SEO system</p>
+        <h2>The monthly operating rhythm</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Week</th>
+              <th>Work</th>
+              <th>Output</th>
+              <th>Why it matters</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Week 1</td>
+              <td>Review Search Console, GBP performance, WhatsApp enquiries, and rankings.</td>
+              <td>One monthly scorecard and 3 priority fixes.</td>
+              <td>Do not chase random keywords. Let search data and enquiries decide the next work.</td>
+            </tr>
+            <tr>
+              <td>Week 2</td>
+              <td>Publish one high-intent financing page or article.</td>
+              <td>Example: "Business loan rejection in Malaysia: what to prepare before reapplying".</td>
+              <td>Google recommends useful, unique, people-first content, not thin keyword pages.</td>
+            </tr>
+            <tr>
+              <td>Week 3</td>
+              <td>Update Google Business Profile and request reviews from suitable clients.</td>
+              <td>4 GBP posts, fresh photos, review replies, and complete business info.</td>
+              <td>Local visibility is driven by relevance, distance, and prominence.</td>
+            </tr>
+            <tr>
+              <td>Week 4</td>
+              <td>Repurpose the monthly topic into social and short-form assets.</td>
+              <td>1 LinkedIn post, 1 Instagram carousel, 1 short video script, 1 WhatsApp follow-up angle.</td>
+              <td>SEO compounds slowly; social and partner traffic create faster discovery.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section page-break">
+        <p class="eyebrow">Traffic channels</p>
+        <h2>Best traffic mix for EGA</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>1. Google Search</h3>
+            <p class="muted">
+              Build service pages around intent, not volume. Start with SME business loan consultant,
+              working capital financing, equipment financing, grant financing, factoring, P2P financing,
+              halal financing, and business loan rejection support.
+            </p>
+          </div>
+          <div class="card">
+            <h3>2. Google Business Profile</h3>
+            <p class="muted">
+              This should become Jay's local trust surface: complete info, recent photos, weekly posts,
+              review replies, service categories, and clear appointment/WhatsApp path.
+            </p>
+          </div>
+          <div class="card">
+            <h3>3. LinkedIn and founder-led posts</h3>
+            <p class="muted">
+              Post practical financing breakdowns for founders, accountants, SME owners, and business
+              consultants. Do not write generic "we help businesses grow" content.
+            </p>
+          </div>
+          <div class="card">
+            <h3>4. Referral partners</h3>
+            <p class="muted">
+              Accountants, company secretaries, insurance agents, real estate agents, SME consultants,
+              and equipment suppliers can send higher-intent leads than broad social posting.
+            </p>
+          </div>
+          <div class="card">
+            <h3>5. Low-budget search ads</h3>
+            <p class="muted">
+              Use only for high-intent terms once conversion tracking is installed. Send traffic to
+              one tight page with WhatsApp click tracking, not the homepage by default.
+            </p>
+          </div>
+          <div class="card">
+            <h3>6. Case-story assets</h3>
+            <p class="muted">
+              Publish anonymized before/after stories: funding problem, documents missing, route chosen,
+              time to approval, and lesson learned. No fake claims, no guaranteed approval language.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">Page roadmap</p>
+        <h2>Pages to add after the one-page site</h2>
+        <div class="pill-row">
+          <span class="pill">SME business loan consultant Malaysia</span>
+          <span class="pill">Working capital financing Malaysia</span>
+          <span class="pill">Equipment financing Malaysia</span>
+          <span class="pill">Invoice factoring Malaysia</span>
+          <span class="pill">Business loan rejection help</span>
+          <span class="pill">Government grant financing</span>
+          <span class="pill">Halal financing advisory</span>
+          <span class="pill">P2P financing advisory</span>
+          <span class="pill">Business loan checklist</span>
+          <span class="pill">Puchong SME financing advisor</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">GPT Image content engine</p>
+        <h2>Weekly content automation engine</h2>
+        <div class="callout">
+          <h3>Goal: one financing lesson becomes five assets every week.</h3>
+          <p>
+            The engine should not mass-produce generic financial quotes. It should turn Jay's actual
+            advisory knowledge into clear, trust-building content.
+          </p>
+        </div>
+        <div class="grid grid-2" style="margin-top: 18px;">
+          <div class="card">
+            <h3>Inputs</h3>
+            <ul class="checklist">
+              <li>One real client question or anonymized financing situation.</li>
+              <li>One financing route: bank, grant, factoring, P2P, halal, koperasi, or equity.</li>
+              <li>One caution: documents, cash flow, CTOS/CCRIS, collateral, approval risk, or timeline.</li>
+              <li>One CTA: WhatsApp Jay for a financing route check.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Outputs</h3>
+            <ul class="checklist">
+              <li>LinkedIn post for business owners.</li>
+              <li>5-slide Instagram carousel using GPT Image in EGA navy/gold/cream.</li>
+              <li>30-second short-video script with captions.</li>
+              <li>Google Business Profile post.</li>
+              <li>WhatsApp broadcast angle for warm contacts.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card" style="margin-top: 18px;">
+          <h3>Reusable GPT Image prompt</h3>
+          <p class="muted">
+            Create a premium financial advisory carousel slide for Exclusive Global Advisory.
+            Brand colors: deep navy #0A2643, champagne gold #D4B86A, cream #FDF8F0.
+            Topic: [weekly financing lesson]. Audience: Malaysian SME owners. Style: clean
+            editorial business design, no stock-photo cliches, no fake cheques, no luxury cars,
+            no guaranteed approval wording. Include one clear headline, one simple visual metaphor,
+            and space for the EGA logo. Make it trustworthy, calm, and readable on mobile.
+          </p>
+        </div>
+      </section>
+
+      <section class="section page-break">
+        <p class="eyebrow">90-day plan</p>
+        <h2>What to do next</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Phase</th>
+              <th>Priority</th>
+              <th>Deliverables</th>
+              <th>Decision gate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Days 1-14</td>
+              <td>Make the site measurable.</td>
+              <td>Real domain, Search Console, GA4, WhatsApp click events, sitemap submitted, GBP complete.</td>
+              <td>Can we see impressions, clicks, and WhatsApp starts?</td>
+            </tr>
+            <tr>
+              <td>Days 15-45</td>
+              <td>Build the first content cluster.</td>
+              <td>4 high-intent pages, 4 GBP posts, 4 LinkedIn posts, 4 GPT Image carousels.</td>
+              <td>Which topic gets the best clicks or enquiries?</td>
+            </tr>
+            <tr>
+              <td>Days 46-75</td>
+              <td>Add proof and partner traffic.</td>
+              <td>2 anonymized case stories, 20 referral partner outreach messages, 1 business loan checklist.</td>
+              <td>Are enquiries coming from search, social, or partners?</td>
+            </tr>
+            <tr>
+              <td>Days 76-90</td>
+              <td>Scale what worked.</td>
+              <td>Refresh the top pages, add FAQs, test one paid-search landing page, publish month-end report.</td>
+              <td>Keep, cut, or double down by channel.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">KPIs</p>
+        <h2>Monthly reporting dashboard</h2>
+        <div class="grid grid-3">
+          <div class="card metric">
+            <strong>Search</strong>
+            <span>Impressions, clicks, average position, indexed pages, top queries.</span>
+          </div>
+          <div class="card metric">
+            <strong>Local</strong>
+            <span>GBP profile views, calls, website clicks, direction requests, reviews.</span>
+          </div>
+          <div class="card metric">
+            <strong>Sales</strong>
+            <span>WhatsApp starts, qualified enquiries, consultation bookings, closed funding cases.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">Important guardrails</p>
+        <h2>Claim safety for finance content</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Use</h3>
+            <ul class="checklist">
+              <li>"Funding route check" instead of "guaranteed approval".</li>
+              <li>"Subject to lender approval" on calculators and financing examples.</li>
+              <li>Real client outcomes only, anonymized when needed.</li>
+              <li>Clear disclaimers when content is educational.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Avoid</h3>
+            <ul class="checklist">
+              <li>Guaranteed approval, guaranteed rates, or guaranteed timelines.</li>
+              <li>Fake screenshots, fake bank letters, or invented case studies.</li>
+              <li>Thin AI-generated articles that repeat the same advice.</li>
+              <li>Mass content across unrelated finance topics.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <p class="eyebrow">Sources</p>
+        <h2>References used</h2>
+        <ol class="source-list">
+          <li>
+            Google Search Central, SEO Starter Guide:
+            <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">developers.google.com/search/docs/fundamentals/seo-starter-guide</a>
+          </li>
+          <li>
+            Google Business Profile Help, local ranking:
+            <a href="https://support.google.com/business/answer/7091?hl=en">support.google.com/business/answer/7091</a>
+          </li>
+          <li>
+            Google Search Central, helpful people-first content:
+            <a href="https://developers.google.com/search/docs/fundamentals/creating-helpful-content">developers.google.com/search/docs/fundamentals/creating-helpful-content</a>
+          </li>
+          <li>
+            Google Search Central, generative AI search:
+            <a href="https://developers.google.com/search/docs/fundamentals/ai-optimization-guide">developers.google.com/search/docs/fundamentals/ai-optimization-guide</a>
+          </li>
+          <li>
+            Google Search Central, page experience:
+            <a href="https://developers.google.com/search/docs/appearance/page-experience">developers.google.com/search/docs/appearance/page-experience</a>
+          </li>
+        </ol>
+      </section>
+
+      <footer class="footer">
+        <p>
+          Prepared for Dainer and Jay on 23 June 2026. This report is an operating plan, not a
+          ranking guarantee. SEO results can take weeks to months and should be measured through
+          Search Console, Google Business Profile, GA4, and WhatsApp enquiry tracking.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

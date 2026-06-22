@@ -21,7 +21,7 @@ export function Hero() {
       />
 
       <div className="relative z-10 mx-auto flex min-h-screen max-w-7xl flex-col justify-end px-5 pb-16 pt-32 sm:px-6 lg:px-8 lg:pb-20">
-        <div className="grid grid-cols-1 items-end gap-10 lg:grid-cols-[minmax(0,1fr)_360px]">
+        <div className="grid grid-cols-1 items-end gap-10 xl:grid-cols-[minmax(0,1fr)_360px]">
           <div>
             <AnimatedHeading
               text={'Financing tomorrow,\nbuilt for your business.'}
@@ -68,7 +68,7 @@ export function Hero() {
           </div>
 
           <FadeIn delay={1400} duration={800}>
-            <div className="liquid-glass w-fit rounded-2xl border border-white/20 px-6 py-4 text-lg font-light leading-tight text-white shadow-[0_22px_60px_rgba(0,0,0,.24)] md:text-xl lg:ml-auto lg:text-2xl">
+            <div className="liquid-glass w-fit rounded-2xl border border-white/20 px-6 py-4 text-lg font-light leading-tight text-white shadow-[0_22px_60px_rgba(0,0,0,.24)] md:text-xl xl:ml-auto xl:text-2xl">
               Financing. Advisory. Growth.
             </div>
           </FadeIn>

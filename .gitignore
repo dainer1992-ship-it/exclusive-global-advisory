@@ -4,6 +4,8 @@ dist/
 *.tsbuildinfo
 vite.config.js
 vite.config.d.ts
+tmp/
+output/
 
 # Local build/source references not needed in the public preview repo.
 CODEX_BRIEF.md

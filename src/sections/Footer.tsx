@@ -1,5 +1,5 @@
 import { Facebook, Instagram, Music2, Youtube } from 'lucide-react';
-import { socials } from '../lib/format';
+import { assetPath, socials } from '../lib/format';
 
 const navItems = [
   { label: 'About', href: '#about' },
@@ -14,7 +14,7 @@ export function Footer() {
     <footer className="navy-surface text-white">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-6 md:grid-cols-[1fr_auto_auto] lg:px-8">
         <div className="max-w-sm">
-          <img src="/logo-ega.png" alt="Exclusive Global Advisory" className="mb-5 h-12 w-auto" />
+          <img src={assetPath('logo-ega.png')} alt="Exclusive Global Advisory" className="mb-5 h-12 w-auto" />
           <p className="text-sm leading-6 text-white/65">
             Multi-source financing advisory for Malaysian SMEs that need practical routes to
             capital, licensing, accounting, legal, and risk support.

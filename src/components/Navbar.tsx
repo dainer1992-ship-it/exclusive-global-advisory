@@ -1,4 +1,4 @@
-import { WHATSAPP_URL } from '../lib/format';
+import { WHATSAPP_URL, assetPath } from '../lib/format';
 
 const navItems = [
   { label: 'About', href: '#about' },
@@ -17,7 +17,7 @@ export function Navbar() {
           className="liquid-glass flex h-14 items-center rounded-2xl px-4 py-2 transition-transform duration-300 ease-out hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-gold/70"
           aria-label="Exclusive Global Advisory home"
         >
-          <img src="/logo-ega.png" alt="Exclusive Global Advisory" className="h-9 w-auto" />
+          <img src={assetPath('logo-ega.png')} alt="Exclusive Global Advisory" className="h-9 w-auto" />
         </a>
 
         <div className="liquid-glass hidden rounded-2xl px-6 py-3 md:block">
