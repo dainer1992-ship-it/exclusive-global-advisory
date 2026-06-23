@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/about/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/why-choose-us/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/services/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/services/business-fundraising-capital/</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/services/account-tax-collaboration-with-partner/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/services/legal-services-collaboration-with-partner/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/services/business-license/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/services/insurance-risk-services/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/contact/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/support/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/loan-calculator/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/loan-eligibility-test/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/articles/</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/articles/business-loan-rejection-malaysia/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/articles/working-capital-financing-malaysia/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/articles/grant-equity-bank-financing-malaysia/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/articles/factoring-p2p-financing-malaysia/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://dainer1992-ship-it.github.io/exclusive-global-advisory/articles/keyman-insurance-corporate-risk/</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

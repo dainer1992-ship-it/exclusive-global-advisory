@@ -1,5 +1,7 @@
 import { MessageCircle } from 'lucide-react';
+import { useEffect } from 'react';
 import { Navbar } from './components/Navbar';
+import { ContentPage } from './pages/ContentPage';
 import { About } from './sections/About';
 import { Calculators } from './sections/Calculators';
 import { Contact } from './sections/Contact';
@@ -9,21 +11,37 @@ import { Services } from './sections/Services';
 import { Stats } from './sections/Stats';
 import { WhyChooseUs } from './sections/WhyChooseUs';
 import { WHATSAPP_URL } from './lib/format';
+import { findContentPage } from './lib/siteContent';
 
 export default function App() {
+  const contentPage =
+    typeof window === 'undefined' ? undefined : findContentPage(window.location.pathname, window.location.search);
+
+  useEffect(() => {
+    document.title = contentPage
+      ? `${contentPage.title} | Exclusive Global Advisory`
+      : 'Exclusive Global Advisory | SME Business Loan Consultant Malaysia';
+  }, [contentPage]);
+
   return (
     <div className="min-h-screen bg-[linear-gradient(180deg,#FDF8F0_0%,#F7EFE4_44%,#FDF8F0_100%)] text-ink">
-      <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <WhyChooseUs />
-        <Stats />
-        <Calculators />
-        <About />
-        <Contact />
-      </main>
-      <Footer />
+      {contentPage ? (
+        <ContentPage page={contentPage} />
+      ) : (
+        <>
+          <Navbar />
+          <main>
+            <Hero />
+            <Services />
+            <WhyChooseUs />
+            <Stats />
+            <Calculators />
+            <About />
+            <Contact />
+          </main>
+          <Footer />
+        </>
+      )}
       <a
         href={WHATSAPP_URL}
         target="_blank"

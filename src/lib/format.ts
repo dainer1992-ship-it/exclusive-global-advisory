@@ -14,8 +14,20 @@ export const socials = {
   youtube: 'https://www.youtube.com/watch?v=QsY8fnvMn6c',
 };
 
+function publicBasePath() {
+  if (typeof window === 'undefined') return '/';
+  return window.location.pathname.startsWith('/exclusive-global-advisory')
+    ? '/exclusive-global-advisory/'
+    : '/';
+}
+
 export function assetPath(filename: string) {
-  return filename.replace(/^\/+/, '');
+  return `${publicBasePath()}${filename.replace(/^\/+/, '')}`;
+}
+
+export function appPath(path: string) {
+  const clean = path.replace(/^\/+/, '');
+  return `${publicBasePath()}${clean}`;
 }
 
 export function formatCurrency(value: number) {

@@ -1,18 +1,28 @@
 import { Facebook, Instagram, Music2, Youtube } from 'lucide-react';
-import { assetPath, socials } from '../lib/format';
+import { appPath, assetPath, socials } from '../lib/format';
 
 const navItems = [
-  { label: 'About', href: '#about' },
-  { label: 'Services', href: '#services' },
-  { label: 'Calculators', href: '#calculators' },
-  { label: 'Why Us', href: '#why-us' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'About', href: 'about/' },
+  { label: 'Why Choose Us', href: 'why-choose-us/' },
+  { label: 'Services', href: 'services/' },
+  { label: 'Loan Calculator', href: 'loan-calculator/' },
+  { label: 'Support', href: 'support/' },
+  { label: 'Articles', href: 'articles/' },
+  { label: 'Contact', href: 'contact/' },
+];
+
+const serviceItems = [
+  { label: 'Fundraising & Capital', href: 'services/business-fundraising-capital/' },
+  { label: 'Accounting & Tax', href: 'services/account-tax-collaboration-with-partner/' },
+  { label: 'Legal Advisory', href: 'services/legal-services-collaboration-with-partner/' },
+  { label: 'Business License', href: 'services/business-license/' },
+  { label: 'Insurance & Risk', href: 'services/insurance-risk-services/' },
 ];
 
 export function Footer() {
   return (
     <footer className="navy-surface text-white">
-      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-6 md:grid-cols-[1fr_auto_auto] lg:px-8">
+      <div className="mx-auto grid max-w-7xl gap-10 px-5 py-14 sm:px-6 md:grid-cols-[1fr_auto_auto_auto] lg:px-8">
         <div className="max-w-sm">
           <img src={assetPath('logo-ega.png')} alt="Exclusive Global Advisory" className="mb-5 h-12 w-auto" />
           <p className="text-sm leading-6 text-white/65">
@@ -25,7 +35,18 @@ export function Footer() {
           <h3 className="mb-4 text-sm font-semibold uppercase tracking-[.14em] text-gold">Company</h3>
           <div className="grid gap-2 text-sm text-white/70">
             {navItems.map((item) => (
-              <a key={item.href} href={item.href} className="transition-colors hover:text-white">
+              <a key={item.href} href={appPath(item.href)} className="transition-colors hover:text-white">
+                {item.label}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <h3 className="mb-4 text-sm font-semibold uppercase tracking-[.14em] text-gold">Services</h3>
+          <div className="grid gap-2 text-sm text-white/70">
+            {serviceItems.map((item) => (
+              <a key={item.href} href={appPath(item.href)} className="transition-colors hover:text-white">
                 {item.label}
               </a>
             ))}

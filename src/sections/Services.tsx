@@ -1,5 +1,6 @@
 import { BadgeCheck, Calculator, FileSignature, Landmark, ShieldCheck } from 'lucide-react';
 import { FadeIn } from '../components/FadeIn';
+import { appPath } from '../lib/format';
 
 const services = [
   {
@@ -7,26 +8,31 @@ const services = [
     description:
       'Grant Financing, Equity Financing, Bank Financing, Halal Financing, Koperasi Institution Financing, Factoring Financing, P2P Financing, BFP, BSP, PCP.',
     icon: Landmark,
+    href: 'services/business-fundraising-capital/',
   },
   {
     title: 'Accounting & Tax',
     description: 'Company Secretary (COSEC), Bookkeeping, Audit, Tax Services.',
     icon: Calculator,
+    href: 'services/account-tax-collaboration-with-partner/',
   },
   {
     title: 'Legal Advisory',
     description: 'Facility Agreement Drafting & Corporate Legal Services.',
     icon: FileSignature,
+    href: 'services/legal-services-collaboration-with-partner/',
   },
   {
     title: 'Business Licensing',
     description: 'Local & Agency Government license applications.',
     icon: BadgeCheck,
+    href: 'services/business-license/',
   },
   {
     title: 'Insurance & Risk',
     description: 'Keyman Insurance, Corporate Insurance.',
     icon: ShieldCheck,
+    href: 'services/insurance-risk-services/',
   },
 ];
 
@@ -71,6 +77,12 @@ export function Services() {
                   <p className={`${featured ? 'text-base leading-7' : 'text-[0.95rem] leading-7'} max-w-[30rem] text-muted`}>
                     {service.description}
                   </p>
+                  <a
+                    href={appPath(service.href)}
+                    className="mt-6 inline-flex w-fit rounded-full border border-navy/10 px-4 py-2 text-sm font-semibold text-navy transition-colors hover:bg-gold/20"
+                  >
+                    Know More
+                  </a>
                 </article>
               </FadeIn>
             );

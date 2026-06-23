@@ -1,6 +1,6 @@
 import { AnimatedHeading } from '../components/AnimatedHeading';
 import { FadeIn } from '../components/FadeIn';
-import { WHATSAPP_URL } from '../lib/format';
+import { WHATSAPP_URL, appPath } from '../lib/format';
 
 const heroVideo =
   'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260403_050628_c4e32401-fab4-4a27-b7a8-6e9291cd5959.mp4';
@@ -46,7 +46,7 @@ export function Hero() {
                   Talk to Us
                 </a>
                 <a
-                  href="#services"
+                  href={appPath('services/')}
                   className="liquid-glass rounded-xl border border-white/20 px-8 py-3 text-center font-semibold text-white transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-gold hover:text-navy focus:outline-none focus:ring-2 focus:ring-white/60"
                 >
                   Our Services
