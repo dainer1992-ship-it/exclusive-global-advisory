@@ -1,0 +1,297 @@
+{
+  "bot": {
+    "name": "EGA Page Graph Bot",
+    "version": "2026-06-23",
+    "purpose": "Track migrated pages, old-site source routes, and interlink relationships for the Exclusive Global Advisory rebuild."
+  },
+  "crawl": {
+    "original_domain": "https://exclusiveglobaladvisory.com.my",
+    "preview_domain": "https://dainer1992-ship-it.github.io/exclusive-global-advisory",
+    "last_checked": "2026-06-23",
+    "methods": [
+      {
+        "name": "source-material report",
+        "status": "usable",
+        "evidence": "source-material/report.json captured homepage title, meta description, navigation, service links, social links, contact link, and old assets."
+      },
+      {
+        "name": "public HTTP fetch",
+        "status": "blocked",
+        "evidence": "Original pages redirect to WordPress password-protected login."
+      },
+      {
+        "name": "WordPress REST API",
+        "status": "blocked",
+        "evidence": "wp-json/wp/v2/pages returns rest_cannot_access with status 401."
+      },
+      {
+        "name": "WordPress sitemap",
+        "status": "blocked",
+        "evidence": "wp-sitemap.xml redirects to the same password-protected login page."
+      },
+      {
+        "name": "screenshot-assisted audit",
+        "status": "usable",
+        "evidence": "Screenshots confirmed the Account & Tax child hierarchy and visible Audit/Tax page copy."
+      }
+    ],
+    "limitation": "Exact full migration of every old WordPress page requires the WordPress password, an authenticated browser export, or a CMS/database export. This graph separates confirmed routes from routes seeded by screenshots and advisory rewrite."
+  },
+  "nodes": [
+    {
+      "id": "home",
+      "title": "Exclusive Global Advisory",
+      "type": "landing",
+      "old_url": "https://exclusiveglobaladvisory.com.my/",
+      "new_path": "/",
+      "status": "migrated_from_source_report"
+    },
+    {
+      "id": "about",
+      "title": "About Exclusive Global Advisory",
+      "type": "page",
+      "old_url": "https://exclusiveglobaladvisory.com.my/about/",
+      "new_path": "/about/",
+      "status": "migrated_rewritten"
+    },
+    {
+      "id": "why_choose_us",
+      "title": "Why Choose Us",
+      "type": "page",
+      "old_url": "https://exclusiveglobaladvisory.com.my/why-choose-us/",
+      "new_path": "/why-choose-us/",
+      "status": "migrated_rewritten"
+    },
+    {
+      "id": "services",
+      "title": "Services",
+      "type": "hub",
+      "old_url": "https://exclusiveglobaladvisory.com.my/services/",
+      "new_path": "/services/",
+      "status": "migrated_rewritten"
+    },
+    {
+      "id": "business_fundraising_capital",
+      "title": "Business Fundraising & Capital",
+      "type": "service",
+      "old_url": "https://exclusiveglobaladvisory.com.my/services/business-fundraising-capital/",
+      "new_path": "/services/business-fundraising-capital/",
+      "status": "migrated_rewritten"
+    },
+    {
+      "id": "account_tax",
+      "title": "Account & Tax - Collaboration with Partner",
+      "type": "service_group",
+      "old_url": "https://exclusiveglobaladvisory.com.my/services/account-tax-collaboration-with-partner/",
+      "new_path": "/services/account-tax-collaboration-with-partner/",
+      "status": "migrated_rewritten"
+    },
+    {
+      "id": "company_secretary_cosec",
+      "title": "Company Secretary (COSEC)",
+      "type": "service_child",
+      "old_url": "https://exclusiveglobaladvisory.com.my/services/company-secretary-cosec/",
+      "new_path": "/services/company-secretary-cosec/",
+      "status": "added_from_screenshot_hierarchy"
+    },
+    {
+      "id": "bookkeeping",
+      "title": "Bookkeeping",
+      "type": "service_child",
+      "old_url": "https://exclusiveglobaladvisory.com.my/services/bookkeeping/",
+      "new_path": "/services/bookkeeping/",
+      "status": "added_from_screenshot_hierarchy"
+    },
+    {
+      "id": "audit",
+      "title": "Audit",
+      "type": "service_child",
+      "old_url": "https://exclusiveglobaladvisory.com.my/services/audit/",
+      "new_path": "/services/audit/",
+      "status": "screenshot_seeded_and_rewritten"
+    },
+    {
+      "id": "tax",
+      "title": "Tax",
+      "type": "service_child",
+      "old_url": "https://exclusiveglobaladvisory.com.my/services/tax/",
+      "new_path": "/services/tax/",
+      "status": "screenshot_seeded_and_rewritten"
+    },
+    {
+      "id": "legal_services",
+      "title": "Legal Services - Collaboration with Partner",
+      "type": "service",
+      "old_url": "https://exclusiveglobaladvisory.com.my/services/legal-services-collaboration-with-partner/",
+      "new_path": "/services/legal-services-collaboration-with-partner/",
+      "status": "migrated_rewritten"
+    },
+    {
+      "id": "business_license",
+      "title": "Business License",
+      "type": "service",
+      "old_url": "https://exclusiveglobaladvisory.com.my/services/business-license/",
+      "new_path": "/services/business-license/",
+      "status": "migrated_rewritten"
+    },
+    {
+      "id": "insurance_risk_services",
+      "title": "Insurance & Risk Services",
+      "type": "service",
+      "old_url": "https://exclusiveglobaladvisory.com.my/services/insurance-risk-services/",
+      "new_path": "/services/insurance-risk-services/",
+      "status": "migrated_rewritten"
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "type": "conversion",
+      "old_url": "https://exclusiveglobaladvisory.com.my/contact/",
+      "new_path": "/contact/",
+      "status": "migrated_rewritten"
+    },
+    {
+      "id": "support",
+      "title": "Support",
+      "type": "support",
+      "old_url": null,
+      "new_path": "/support/",
+      "status": "new_support_hub"
+    },
+    {
+      "id": "loan_calculator",
+      "title": "Loan Calculator",
+      "type": "tool",
+      "old_url": "https://exclusiveglobaladvisory.com.my/",
+      "new_path": "/loan-calculator/",
+      "status": "new_tool_page_from_homepage_section"
+    },
+    {
+      "id": "loan_eligibility_test",
+      "title": "Loan Eligibility Test",
+      "type": "support",
+      "old_url": "https://exclusiveglobaladvisory.com.my/",
+      "new_path": "/loan-eligibility-test/",
+      "status": "new_support_page_from_homepage_section"
+    },
+    {
+      "id": "articles",
+      "title": "Articles",
+      "type": "article_hub",
+      "old_url": null,
+      "new_path": "/articles/",
+      "status": "new_seo_hub"
+    },
+    {
+      "id": "business_loan_rejection_malaysia",
+      "title": "Business loan rejected in Malaysia?",
+      "type": "article",
+      "old_url": null,
+      "new_path": "/articles/business-loan-rejection-malaysia/",
+      "status": "new_seo_article"
+    },
+    {
+      "id": "working_capital_financing_malaysia",
+      "title": "Working capital financing Malaysia",
+      "type": "article",
+      "old_url": null,
+      "new_path": "/articles/working-capital-financing-malaysia/",
+      "status": "new_seo_article"
+    },
+    {
+      "id": "grant_equity_bank_financing_malaysia",
+      "title": "Grant, equity, or bank financing",
+      "type": "article",
+      "old_url": null,
+      "new_path": "/articles/grant-equity-bank-financing-malaysia/",
+      "status": "new_seo_article"
+    },
+    {
+      "id": "factoring_p2p_financing_malaysia",
+      "title": "Factoring and P2P financing",
+      "type": "article",
+      "old_url": null,
+      "new_path": "/articles/factoring-p2p-financing-malaysia/",
+      "status": "new_seo_article"
+    },
+    {
+      "id": "keyman_insurance_corporate_risk",
+      "title": "Keyman insurance and corporate risk",
+      "type": "article",
+      "old_url": null,
+      "new_path": "/articles/keyman-insurance-corporate-risk/",
+      "status": "new_seo_article"
+    },
+    {
+      "id": "seo_report",
+      "title": "Monthly SEO and Traffic Plan",
+      "type": "report",
+      "old_url": null,
+      "new_path": "/reports/ega-seo-traffic-report.html",
+      "status": "new_report"
+    },
+    {
+      "id": "page_graph",
+      "title": "EGA Page Graph Bot JSON",
+      "type": "report",
+      "old_url": null,
+      "new_path": "/reports/ega-page-graph.json",
+      "status": "new_tracking_artifact"
+    }
+  ],
+  "edges": [
+    { "from": "home", "to": "about", "relation": "nav" },
+    { "from": "home", "to": "services", "relation": "nav" },
+    { "from": "home", "to": "why_choose_us", "relation": "nav" },
+    { "from": "home", "to": "loan_calculator", "relation": "tool_cta" },
+    { "from": "home", "to": "contact", "relation": "conversion_cta" },
+    { "from": "services", "to": "business_fundraising_capital", "relation": "top_level_service" },
+    { "from": "services", "to": "account_tax", "relation": "top_level_service" },
+    { "from": "services", "to": "legal_services", "relation": "top_level_service" },
+    { "from": "services", "to": "business_license", "relation": "top_level_service" },
+    { "from": "services", "to": "insurance_risk_services", "relation": "top_level_service" },
+    { "from": "account_tax", "to": "company_secretary_cosec", "relation": "child_page" },
+    { "from": "account_tax", "to": "bookkeeping", "relation": "child_page" },
+    { "from": "account_tax", "to": "audit", "relation": "child_page" },
+    { "from": "account_tax", "to": "tax", "relation": "child_page" },
+    { "from": "company_secretary_cosec", "to": "account_tax", "relation": "parent" },
+    { "from": "bookkeeping", "to": "account_tax", "relation": "parent" },
+    { "from": "audit", "to": "account_tax", "relation": "parent" },
+    { "from": "tax", "to": "account_tax", "relation": "parent" },
+    { "from": "business_fundraising_capital", "to": "loan_eligibility_test", "relation": "readiness_step" },
+    { "from": "business_fundraising_capital", "to": "business_loan_rejection_malaysia", "relation": "education" },
+    { "from": "account_tax", "to": "business_fundraising_capital", "relation": "financing_dependency" },
+    { "from": "business_license", "to": "account_tax", "relation": "compliance_dependency" },
+    { "from": "legal_services", "to": "business_fundraising_capital", "relation": "financing_dependency" },
+    { "from": "insurance_risk_services", "to": "keyman_insurance_corporate_risk", "relation": "education" },
+    { "from": "support", "to": "loan_eligibility_test", "relation": "support_flow" },
+    { "from": "support", "to": "loan_calculator", "relation": "support_flow" },
+    { "from": "support", "to": "articles", "relation": "support_flow" },
+    { "from": "articles", "to": "business_loan_rejection_malaysia", "relation": "article_child" },
+    { "from": "articles", "to": "working_capital_financing_malaysia", "relation": "article_child" },
+    { "from": "articles", "to": "grant_equity_bank_financing_malaysia", "relation": "article_child" },
+    { "from": "articles", "to": "factoring_p2p_financing_malaysia", "relation": "article_child" },
+    { "from": "articles", "to": "keyman_insurance_corporate_risk", "relation": "article_child" },
+    { "from": "seo_report", "to": "page_graph", "relation": "audit_artifact" },
+    { "from": "page_graph", "to": "services", "relation": "tracks" }
+  ],
+  "gaps": [
+    {
+      "item": "Exact old page body copy",
+      "severity": "medium",
+      "reason": "Original WordPress pages are password-protected to unauthenticated agents.",
+      "fix": "Provide WordPress password, export pages from WordPress, or save authenticated pages as HTML."
+    },
+    {
+      "item": "Original child-page hero images for Audit and Tax",
+      "severity": "low",
+      "reason": "Screenshots show blue title artwork, but the rebuilt site uses brand-consistent content templates.",
+      "fix": "Provide image exports if Jay wants exact legacy visuals retained."
+    }
+  ],
+  "next_audit_steps": [
+    "Get authenticated WordPress export if exact legacy body copy is required.",
+    "Re-run this graph after adding any new service or article page.",
+    "Use Search Console after domain launch to prioritize which child pages need expanded SEO copy first."
+  ]
+}

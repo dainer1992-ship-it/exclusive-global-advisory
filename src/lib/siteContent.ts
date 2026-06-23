@@ -147,7 +147,13 @@ export const migratedPages: ContentPage[] = [
       'Company secretary, bookkeeping, audit, and tax support that helps SMEs keep cleaner records before financing discussions.',
     kind: 'service',
     cta: 'Ask about accounting support',
-    related: ['/services/business-fundraising-capital/', '/support/', '/contact/'],
+    related: [
+      '/services/company-secretary-cosec/',
+      '/services/bookkeeping/',
+      '/services/audit/',
+      '/services/tax/',
+      '/contact/',
+    ],
     blocks: [
       {
         heading: 'Why it matters for financing',
@@ -165,6 +171,142 @@ export const migratedPages: ContentPage[] = [
         heading: 'When to start',
         body: [
           'Start before applying for funding, not after rejection. Clean records reduce friction and make the advisory process faster.',
+        ],
+      },
+    ],
+  },
+  {
+    path: '/services/company-secretary-cosec/',
+    eyebrow: 'Accounting & Tax',
+    title: 'Company secretary support for cleaner statutory records.',
+    summary:
+      'COSEC support helps SMEs keep company records, filings, resolutions, and governance paperwork ready before banking or financing review.',
+    kind: 'service',
+    cta: 'Ask about COSEC support',
+    related: [
+      '/services/account-tax-collaboration-with-partner/',
+      '/services/bookkeeping/',
+      '/services/business-fundraising-capital/',
+      '/contact/',
+    ],
+    blocks: [
+      {
+        heading: 'What is Company Secretary (COSEC)?',
+        body: [
+          'Company secretary support keeps statutory records and corporate filings organised so the company can operate, report, and apply for financing with fewer document gaps.',
+          'For financing work, clean company records reduce back-and-forth when lenders, partners, or government programmes need to understand the company structure.',
+        ],
+      },
+      {
+        heading: 'Key areas covered',
+        body: ['The practical work is governance housekeeping and document readiness.'],
+        bullets: [
+          'Company statutory records and registers.',
+          'Board and shareholder resolutions where needed.',
+          'Annual filing and compliance coordination.',
+          'Document support for financing, licensing, and partner review.',
+        ],
+      },
+    ],
+  },
+  {
+    path: '/services/bookkeeping/',
+    eyebrow: 'Accounting & Tax',
+    title: 'Bookkeeping support that makes the business easier to assess.',
+    summary:
+      'Bookkeeping records daily transactions, reconciles accounts, and keeps the financial trail readable for tax, audit, and funding discussions.',
+    kind: 'service',
+    cta: 'Ask about bookkeeping',
+    related: [
+      '/services/account-tax-collaboration-with-partner/',
+      '/services/audit/',
+      '/services/tax/',
+      '/contact/',
+    ],
+    blocks: [
+      {
+        heading: 'What is Bookkeeping?',
+        body: [
+          'Bookkeeping is the regular recording of sales, expenses, payments, receipts, invoices, and bank activity. It turns day-to-day business movement into records that owners and advisors can review.',
+          'When a company wants financing, bookkeeping quality affects how quickly the business story can be checked against real numbers.',
+        ],
+      },
+      {
+        heading: 'Why it matters before funding',
+        body: ['A lender or programme owner needs numbers that are consistent, traceable, and explainable.'],
+        bullets: [
+          'Transaction recording and document filing.',
+          'Bank reconciliation and payment tracking.',
+          'Management-account preparation support.',
+          'Cleaner handoff for audit, tax, and financing review.',
+        ],
+      },
+    ],
+  },
+  {
+    path: '/services/audit/',
+    eyebrow: 'Accounting & Tax',
+    title: 'Audit support for transparent records and lender confidence.',
+    summary:
+      'Audit support helps owners prepare records, evidence, and review trails so financial information can be checked with more confidence.',
+    kind: 'service',
+    cta: 'Ask about audit support',
+    related: [
+      '/services/account-tax-collaboration-with-partner/',
+      '/services/bookkeeping/',
+      '/services/tax/',
+      '/contact/',
+    ],
+    blocks: [
+      {
+        heading: 'What is Audit?',
+        body: [
+          'An audit is a systematic, independent, and documented examination of records, processes, or systems like financial statements, IT controls, or quality standards. The purpose is to provide an objective evaluation, check for accuracy and compliance, identify risks, and ensure transparency for stakeholders.',
+          'For an SME owner, audit readiness gives banks, partners, regulators, and management a clearer view of whether the records match established criteria.',
+        ],
+      },
+      {
+        heading: 'Key aspects of an audit',
+        body: ['The original audit page positioned this as a disciplined check of business records and controls.'],
+        bullets: [
+          'Systematic and independent review by qualified professionals.',
+          'Objective evidence from records, documents, and processes.',
+          'Accuracy, compliance, and risk checks.',
+          'More confidence for investors, regulators, lenders, and management.',
+        ],
+      },
+    ],
+  },
+  {
+    path: '/services/tax/',
+    eyebrow: 'Accounting & Tax',
+    title: 'Tax support for compliant, financing-ready business records.',
+    summary:
+      'Tax support helps business owners understand obligations, prepare records, and avoid messy gaps before financing or compliance review.',
+    kind: 'service',
+    cta: 'Ask about tax support',
+    related: [
+      '/services/account-tax-collaboration-with-partner/',
+      '/services/bookkeeping/',
+      '/services/audit/',
+      '/contact/',
+    ],
+    blocks: [
+      {
+        heading: 'What is Tax?',
+        body: [
+          'Taxation is the process by which a government imposes mandatory financial charges on individuals and businesses to fund public services and government operations. These payments are compulsory and not directly linked to any specific benefit received by the individual taxpayer.',
+          'For SMEs, tax records also become part of the financial picture that banks and advisors review during funding discussions.',
+        ],
+      },
+      {
+        heading: 'Key aspects of taxation',
+        body: ['The practical goal is compliant records and fewer surprises when business documents are reviewed.'],
+        bullets: [
+          'Compulsory payment required by law.',
+          'Record preparation for filing and review.',
+          'Tax-position clarity before funding applications.',
+          'Coordination with bookkeeping, audit, and advisory work.',
         ],
       },
     ],

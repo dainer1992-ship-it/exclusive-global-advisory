@@ -14,6 +14,10 @@ const navItems = [
 const serviceItems = [
   { label: 'Fundraising & Capital', href: 'services/business-fundraising-capital/' },
   { label: 'Accounting & Tax', href: 'services/account-tax-collaboration-with-partner/' },
+  { label: 'Company Secretary', href: 'services/company-secretary-cosec/' },
+  { label: 'Bookkeeping', href: 'services/bookkeeping/' },
+  { label: 'Audit', href: 'services/audit/' },
+  { label: 'Tax', href: 'services/tax/' },
   { label: 'Legal Advisory', href: 'services/legal-services-collaboration-with-partner/' },
   { label: 'Business License', href: 'services/business-license/' },
   { label: 'Insurance & Risk', href: 'services/insurance-risk-services/' },
